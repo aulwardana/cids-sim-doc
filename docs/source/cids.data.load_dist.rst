@@ -1,5 +1,5 @@
-Usage
-=====
+Load and Distribution of Data
+==========================
 
 .. _installation:
 
@@ -31,4 +31,11 @@ For example:
 >>> import lumache
 >>> lumache.get_random_ingredients()
 ['shells', 'gorgonzola', 'parsley']
+
+Check out the :doc:`usage` section for further information, including
+how to :ref:`installation` the project.
+
+.. note::
+
+   This project is under active development.
 

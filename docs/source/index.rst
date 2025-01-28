@@ -11,20 +11,39 @@ This approach not only safeguards data confidentiality but also enables organiza
 
 Github: `https://github.com/aulwardana/CIDS-Sim <https://github.com/aulwardana/CIDS-Sim>`_
 
-The simulator is *open source* and *free to use* for resercher, practicioner in industry, and educator.
-Please give citation credit if you use this software to our publication `in this link <https://github.com/aulwardana/CIDS-Sim>`
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
-.. note::
-
-   This project is under active development.
-
-Contents
---------
+The simulator is *open-source* and *free to use* for researchers, practitioners in the industry, and educators. 
+If you use this software, please provide citation credit to our publication available at `this link. <https://github.com/aulwardana/CIDS-Sim>`_
 
 .. toctree::
+   :maxdepth: 2
+   :caption: User Guide
 
-   usage
-   api
+   tutor/overview
+   tutor/installation
+   tutor/dataset
+   tutor/configuration
+   tutor/output
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Components
+
+   cids.data.preprocessing
+   cids.data.load_dist
+   cids.fl.model
+   cids.fl.aggregate
+   cids.fl.training
+   cids.fl.predict
+   cids.metric.accuracy
+   cids.metric.precision
+   cids.metric.recall
+   cids.metric.f1_score
+   cids.metric.std_dev
+   cids.metric.varriance
+   cids.metric.train_time
+   cids.metric.pred_time
+   cids.metric.cpu_memory
+   cids.metric.comp_over
+   cids.out.log
+   cids.out.visual
+   cids.out.file

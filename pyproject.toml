@@ -5,4 +5,4 @@ build-backend = "flit_core.buildapi"
 [project]
 name = "CIDS-Sim"
 authors = [{name = "Aulia Arif Wardana", email = "aulia.wardana@pwr.edu.pl"}]
-dynamic = ["1.0.0", "Simulator for Collaborative Intrusion Detection System based on Federated Learning"]
+dynamic = ["1.0.0", "Simulator for CIDS based on Federated Learning"]

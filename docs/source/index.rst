@@ -1,4 +1,4 @@
-CIDS-Sim: Simulator for Collaborative Intrusion Detection System based on Federated Learning
+CIDS-Sim: Simulator for CIDS based on Federated Learning
 ===================================
 
 **CIDS-Sim** (Collaborative Intrusion Detection System - Simulator) is a sophisticated simulation platform engineered to replicate, analyze, and optimize CIDS using federated learning methodologies. 
@@ -12,7 +12,7 @@ This approach not only safeguards data confidentiality but also enables organiza
 Github: `https://github.com/aulwardana/CIDS-Sim <https://github.com/aulwardana/CIDS-Sim>`_
 
 The simulator is *open-source* and *free to use* for researchers, practitioners in the industry, and educators. 
-If you use this software, please provide citation credit to our publication available at `this link. <https://github.com/aulwardana/CIDS-Sim>`_
+If you use this software, please provide citation credit to our **publication** available at `this link. <https://github.com/aulwardana/CIDS-Sim>`_
 
 .. toctree::
    :maxdepth: 2

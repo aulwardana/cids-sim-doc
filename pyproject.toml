@@ -3,6 +3,6 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "lumache"
-authors = [{name = "Graziella", email = "graziella@lumache"}]
-dynamic = ["version", "description"]
+name = "CIDS-Sim"
+authors = [{name = "Aulia Arif Wardana", email = "aulia.wardana@pwr.edu.pl"}]
+dynamic = ["1.0.0", "Simulator for Collaborative Intrusion Detection System based on Federated Learning"]

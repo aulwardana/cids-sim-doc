@@ -15,6 +15,12 @@ A usage example of CoAt-Set in practice is in multi-agent CIDS setups where each
 
 To further increase heterogeneity, each CIDS agent can be assigned a different CoAt-Set version, such as "CoAt_CIC-BoT-IoT-V2.parquet," "CoAt_CIC-IDS2017-V2.parquet," "CoAt_CIC-ToN-IoT-V2.parquet," "CoAt_CIC-UNSW-NB15_Feeded-V2.parquet," and "CoAt_CSE-CIC-IDS2018_Feeded.parquet." Each dataset represents a unique network environment, with each agent positioned in a distinct network segment to detect coordinated attacks. This diversity enables CIDS agents to capture a range of attack patterns, supporting the development of robust, flexible intrusion detection strategies across heterogeneous networks.
 
+**Download The Dataset**
+
+Please download the dataset using link below: 
+
 .. note::
 
     CoAt-Set Download Link: https://data.mendeley.com/datasets/28tmfg3rzb/2
+
+After download, you can put all the dataset files in ``dataset`` folder.

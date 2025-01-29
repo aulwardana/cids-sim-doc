@@ -95,6 +95,10 @@ Then open the cloned repositories
 
 Next, you need to install the requirement for the library.
 
+**Download The Dataset**
+
+Please download the dataset at `this link. <https://data.mendeley.com/datasets/28tmfg3rzb/2>`_ After download, you can put all the dataset files in ``dataset`` folder.
+
 **Run Jupyter Notebook**
 
 Run this command to open Jupyter Notebook in browser.

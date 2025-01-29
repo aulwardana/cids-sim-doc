@@ -55,9 +55,6 @@ Load miniconda
 
 After that, close the terminal and open again, then you can continue to `Prepare Environment using Miniconda` part.
 
-At this point, the ``complete_pipeline.ipynb`` should run completely. To use GPU, CUDA must be
-properly configured.
-
 **Prepare Environment using Miniconda**
 
 Create environment with python 3.10 and install libraries
@@ -112,12 +109,4 @@ Run this command to open Jupyter Notebook in browser.
 
 After all the setup done, you can open `src` folder in github page for the next instruction.
 
-**Development Tool**
-
-Software:
- * This simulator is develop using Python programming language
- * This simulator use Jupyter Notebook as code editor and to run the simulator
-
-Hardware:
- * To develop the simulator, a server with specific technical specifications was utilized: a AMD EPYC 7713 64-Core processor coupled with 64 GB of RAM.
-
+To run the simulator, you can open ``CIDS-Sim_Non-IID.ipynb`` and ``CIDS-Sim_Heterogeneous.ipynb`` in jupyter notebook.

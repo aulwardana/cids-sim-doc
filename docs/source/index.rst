@@ -23,6 +23,7 @@ If you use this software, please provide citation credit to our **publication** 
    tutor/dataset
    tutor/configuration
    tutor/output
+   tutor/future
 
 .. toctree::
    :maxdepth: 1

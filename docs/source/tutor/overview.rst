@@ -5,19 +5,19 @@ Overview
 
 For cybersecurity researchers and developers, CIDS-Sim offers a versatile experimental framework to:
 
-* Test and Compare Detection Algorithms: Evaluate novel intrusion detection mechanisms, anomaly detection models, or adversarial defense strategies in customizable scenarios.
+* **Test and Compare Detection Algorithms**: Evaluate novel intrusion detection mechanisms, anomaly detection models, or adversarial defense strategies in customizable scenarios.
 
-* Assess System Efficiency: Measure communication overhead, computational resource utilization, and latency in federated environments, particularly under bandwidth constraints or intermittent connectivity.
+* **Assess System Efficiency**: Measure communication overhead, computational resource utilization, and latency in federated environments, particularly under bandwidth constraints or intermittent connectivity.
 
-* Analyze Model Robustness: Investigate how federated models perform across diverse network topologies, evolving threat landscapes, or skewed data distributions (e.g., rare attack types in specific nodes).
+* **Analyze Model Robustness**: Investigate how federated models perform across diverse network topologies, evolving threat landscapes, or skewed data distributions (e.g., rare attack types in specific nodes).
 
 In educational contexts, CIDS-Sim functions as an immersive pedagogical tool for instructors and lecturers. It empowers students to interactively explore foundational and advanced topics in cybersecurity and machine learning, such as:
 
-* Federated Learning Dynamics: Hands-on experimentation with model aggregation, client selection strategies, and differential privacy techniques.
+* **Federated Learning Dynamics**: Hands-on experimentation with model aggregation, client selection strategies, and differential privacy techniques.
 
-* Data Privacy Principles: Visualizing how raw data remains decentralized while models achieve global convergence.
+* **Data Privacy Principles**: Visualizing how raw data remains decentralized while models achieve global convergence.
 
-* Distributed System Challenges: Understanding trade-offs between accuracy, scalability, and resource allocation in federated setups.
+* **Distributed System Challenges**: Understanding trade-offs between accuracy, scalability, and resource allocation in federated setups.
 
 By bridging theoretical concepts with practical experimentation, CIDS-Sim accelerates innovation in intrusion detection research while fostering a deeper understanding of privacy-aware, decentralized AI systems. Its adaptability makes it equally valuable for prototyping next-generation cybersecurity solutions, benchmarking federatedlearning frameworks, or designing engaging curricula for cybersecurity education.
 
@@ -31,7 +31,7 @@ The use of CoAt-Set ensures reproducibility and benchmarking, as it provides sta
 
 .. note::
 
-    Check out the :doc:`tutor/dataset` section for further information about dataset.
+    Check out the :ref:`dataset` section for further information about dataset.
 
 **Simulation with Scenario 1**
 

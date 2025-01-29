@@ -105,7 +105,7 @@ Run this command to open Jupyter Notebook in browser.
 
 .. code-block::
 
-    git clone https://github.com/aulwardana/CIDS-Sim.git
+   jupyter notebook
 
 .. note::
 

@@ -35,20 +35,24 @@ Load a unique subset of data for a specific client in a Federated Learning setup
 **Details**:
 
 - **Seed Initialization**:
+
   - ``np.random.seed(client_id)`` ensures reproducibility and uniqueness for each client.  
   - The seed is tied to the ``client_id``, guaranteeing different shuffling patterns across clients.
 
 - **Data Shuffling**:
+
   - ``indices = np.arange(len(X_df_scl))`` generates an array of indices corresponding to the scaled feature dataset.  
   - ``np.random.shuffle(indices)`` randomizes the order of indices.  
   - Each client receives a unique shuffled order due to the client-specific seed.
 
 - **Subset Selection**:
+
   - ``fraction = 0.02`` specifies that 2% of the total data is allocated to each client. Adjust this value to change the client's data portion.  
   - ``client_data_size`` calculates the number of samples per client.  
   - ``client_indices`` selects the first ``client_data_size`` indices from the shuffled array, ensuring non-overlapping subsets across clients.
 
 - **Data Extraction**:
+
   - ``X_client`` and ``y_client`` extract features and labels using the client-specific indices.  
   - Assumes ``X_df_scl`` (scaled features) and ``y_df`` (labels) are predefined from prior preprocessing steps.
 
@@ -56,16 +60,20 @@ Load a unique subset of data for a specific client in a Federated Learning setup
 ------------
 
 - **Non-IID Simulation**:  
+
   - The client-specific shuffling ensures each client's data distribution is unique and non-identically distributed.  
   - Suitable for scenarios requiring heterogeneous data partitions (e.g., edge devices with varying data sources).
 
 - **Dependencies**:  
+
   - Requires ``numpy`` for index manipulation and assumes prior execution of code defining ``X_df_scl`` and ``y_df`` (scaling and splitting steps).
 
 - **Class Distribution**:  
+
   - The function does not explicitly balance classes. Inherits any class imbalance present in the original dataset.  
   - To address imbalance, additional preprocessing (e.g., stratified sampling) may be required.
 
 - **Adjustability**:  
+
   - Modify ``fraction`` to control the proportion of data allocated per client.  
   - Example: ``fraction = 0.05`` allocates 5% of the dataset to each client.

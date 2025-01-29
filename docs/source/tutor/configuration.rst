@@ -113,11 +113,12 @@ Run ``jupyter notebook`` first.
 
 .. code-block:: bash
 
-   python simulator.py
+   jupyter notebook
 
 After that, you can open ``CIDS-Sim_Non-IID.ipynb`` and ``CIDS-Sim_Heterogeneous.ipynb`` in jupyter notebook.
 
 Outputs Generated:
+
 - **Logs**: Real-time metrics (accuracy, F1-score, and etc.) in the console.
 - **Visualizations**: Graphic plots of metric in each rounds.
 - **CSV Files**: Detailed metrics in each round and save in files (e.g., ``global_metrics.csv``).
@@ -126,17 +127,21 @@ Troubleshooting
 ---------------
 
 Common Issues:
+
 - **Dataset Not Found**:
-  - Verify ``file_path`` points to the correct dataset file.
-  - Check filesystem permissions.
+    
+    - Verify ``file_path`` points to the correct dataset file.
+    - Check filesystem permissions.
 
 - **Poor Model Performance**:
-  - Increase ``num_rounds`` or ``epochs``.
-  - Add more layers to ``create_model()``.
+    
+    - Increase ``num_rounds`` or ``epochs``.
+    - Add more layers to ``create_model()``.
 
 - **High Memory Usage**:
-  - Reduce ``batch_size`` or ``num_nodes``.
-  - Disable resource tracking in the code.
+
+    - Reduce ``batch_size`` or ``num_nodes``.
+    - Disable resource tracking in the code.
 
 Support
 -------

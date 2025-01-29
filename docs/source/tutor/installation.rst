@@ -95,7 +95,7 @@ Then open the cloned repositories
 
 Next, you need to install the requirement for the library.
 
-**CRun Jupyter Notebook**
+**Run Jupyter Notebook**
 
 Run this command to open Jupyter Notebook in browser.
 

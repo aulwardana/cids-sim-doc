@@ -9,30 +9,38 @@ Setup & Configuration
 Environment Setup
 ~~~~~~~~~~~~~~~~~
 
-1. Install dependencies:
+1. Install dependencies. Follow more detail instruction on :ref:`installation` section.
+   
    .. code-block:: bash
 
       pip install -r requirements.txt
 
 2. Place your dataset (e.g., ``CoAt-Set.csv``) in the ``./dataset`` directory.
-3. Update the dataset path in the code:
+3. Update the dataset path in the code if you place the dataset in other directory or you use other dataset.
+  
    .. code-block:: python
 
-      file_path = os.path.join("dataset", "your_dataset.csv")  # Adjust path as needed
+      file_path = os.path.join("your_dataset_path", "your_dataset.csv")  # Adjust path as needed
 
 Dataset Configuration
 ~~~~~~~~~~~~~~~~~~~~~
 
-- **Binary Classification (Default)**:
-  .. code-block:: python
+1. By default, the simulator run **Binary Classification**. The target label is using ``Attack`` column in the dataset.
+
+   .. code-block:: python
 
      df = df.drop(columns=['Label'])  # Drops multi-class labels
      y_df = df['Attack']              # Target: 0 (benign) or 1 (attack)
 
-- **Multi-Class Classification**:
+2. If you want to run **Multi-Class Classification**, you need change the target label is using ``Label`` column in the dataset.
+  
   .. code-block:: python
 
+     df = df.drop(columns=['Attack'])
      y_df = df['Label']  # Retain 'Label' column for multi-class targets
+
+3. Do not forget to edit the neural network architecture in ``create_model()``:
+4. Extra code for doing **Multi-Class Classification** also need to provide. This version of simulator is not cover yet, maybe in the future.
 
 Federated Learning Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -70,14 +78,18 @@ Edit ``create_model()``:
 
 .. code-block:: python
 
-   def create_model():
-       model = Sequential([
-           Dense(64, activation='relu', input_shape=(input_dim,)),
-           Dense(32, activation='tanh'),   # Example modified layer
-           Dense(1, activation='sigmoid')  # Output layer
-       ])
-       model.compile(optimizer='adam', loss='binary_crossentropy')
-       return model
+   def create_model(input_shape):
+    model = keras.Sequential([
+        layers.Dense(20, activation='relu', input_shape=(input_shape,)),
+        layers.Dense(10, activation='relu'), #Edit activation using other method. You can see here https://keras.io/api/layers/activations/#available-activations
+        layers.Dense(5, activation='relu'), #Edit number of neuron in each layer (e.g. change 5 with 1000)
+        layers.Dense(3, activation='relu'),
+        layers.Dense(1, activation='sigmoid') 
+    ])
+    #Edit loss with other method. You can see here https://keras.io/api/losses/#available-losses  
+    #Edit optimizer with other method. You can see here https://keras.io/api/optimizers/#available-optimizers  
+    model.compile(loss='mean_squared_error', optimizer='sgd', metrics=['accuracy', Recall(), Precision()])
+    return model
 
 Preprocessing Adjustments
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -97,21 +109,25 @@ Execution & Outputs
 Run the Simulation
 ~~~~~~~~~~~~~~~~~~
 
+Run ``jupyter notebook`` first.
+
 .. code-block:: bash
 
    python simulator.py
 
+After that, you can open ``CIDS-Sim_Non-IID.ipynb`` and ``CIDS-Sim_Heterogeneous.ipynb`` in jupyter notebook.
+
 Outputs Generated:
-- **Logs**: Real-time metrics (accuracy, F1-score) in the console.
-- **Visualizations**: PNG plots of accuracy vs. rounds (saved to ``./results``).
-- **CSV Files**: Detailed metrics per client (e.g., ``global_metrics.csv``).
+- **Logs**: Real-time metrics (accuracy, F1-score, and etc.) in the console.
+- **Visualizations**: Graphic plots of metric in each rounds.
+- **CSV Files**: Detailed metrics in each round and save in files (e.g., ``global_metrics.csv``).
 
 Troubleshooting
 ---------------
 
 Common Issues:
 - **Dataset Not Found**:
-  - Verify ``file_path`` points to the correct CSV file.
+  - Verify ``file_path`` points to the correct dataset file.
   - Check filesystem permissions.
 
 - **Poor Model Performance**:

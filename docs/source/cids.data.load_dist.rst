@@ -1,7 +1,7 @@
 Load and Distribution of Data
 ==========================
 
-.. _installation:
+.. _cids.data.load_dist:
 
 Installation
 ------------

@@ -1,9 +1,41 @@
 Data Preprocessing
-===
+==========================
 
 .. _cids.data.preprocessing:
 
-.. autosummary::
-   :toctree: generated
+Installation
+------------
 
-   lumache
+To use Lumache, first install it using pip:
+
+.. code-block:: console
+
+   (.venv) $ pip install lumache
+
+Creating recipes
+----------------
+
+To retrieve a list of random ingredients,
+you can use the ``lumache.get_random_ingredients()`` function:
+
+.. autofunction:: lumache.get_random_ingredients
+
+The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
+or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
+will raise an exception.
+
+.. autoexception:: lumache.InvalidKindError
+
+For example:
+
+>>> import lumache
+>>> lumache.get_random_ingredients()
+['shells', 'gorgonzola', 'parsley']
+
+Check out the :doc:`usage` section for further information, including
+how to :ref:`installation` the project.
+
+.. note::
+
+   This project is under active development.
+

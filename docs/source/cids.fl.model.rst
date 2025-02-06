@@ -3,7 +3,7 @@ Neural Network Model
 
 .. _cids.fl.model:
 
-This document explains the code in the provided Jupyter notebook for defining a deep neural network model using Keras in a Non-IID Federated Learning scenario.
+This page explains the deep neural network model in CIDS-Sim. The hidden layers follow a funnel-shaped architecture, progressively reducing the number of neurons by half in each subsequent layer, starting from a count equal to the dataset's input features. This configuration allows initial layers to capture general patterns, while deeper layers distill these into higher-level, discriminative features. The hierarchical compression promotes efficient learning of abstract representations, enhancing the model's ability to generalize to unseen data by focusing on essential patterns and discarding noise.
 
 1. Function: `create_model(input_shape)`
 ----------------------------------------
@@ -105,7 +105,7 @@ Define and compile a sequential neural network model for binary classification t
 
 - Requires ``tensorflow`` or ``keras`` for model definition.  
 - Ensure ``Recall`` and ``Precision`` are imported: 
- 
+
   .. code-block:: python
 
      from tensorflow.keras.metrics import Recall, Precision

@@ -68,17 +68,6 @@ Modify in ``load_data()``:
        fraction = 0.02
        # Customize shuffling/sampling logic here
 
-Aggregation Algorithm
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The default method for aggregation algorithm in this simulator is ``Federated Averaging (FedAvg)``. You can modify the aggregation algorithm in the simulator by modify this code:
-
-.. code-block:: python
-   
-   #Modify this code to change FedAvg with other aggregation algorithm.
-   #You can also refer other aggregation algorithm concept from here https://www.sciencedirect.com/science/article/pii/S0167739X23003333
-   new_weights = [np.mean([weight[layer] for weight in local_weights], axis=0) for layer in range(len(global_weights))]
-
 Model Customization
 -------------------
 

@@ -15,8 +15,8 @@ Specifically, it enables researchers and practitioners to rigorously test federa
 
 **References**
 
-1. Aulia Arif Wardana, Grzegorz Kołaczek, Arkadiusz Warzynski, and Parman Sukarno. Collaborative intrusion detection using weighted ensemble averaging deep neural network for coordinated attack detection in heterogeneous network. Int. J. Inf. Secur., 23(5):3329–3349, October 2024.
-2. Aulia Arif Wardana, Grzegorz Kołaczek, and Parman Sukarno. Lightweight, trust-managing, and privacy-preserving collaborative intrusion detection for internet of things. Appl. Sci. (Basel), 14(10):4109, May 2024.
+1. Aulia Arif Wardana, Grzegorz Kołaczek, Arkadiusz Warzynski, and Parman Sukarno. Collaborative intrusion detection using weighted ensemble averaging deep neural network for coordinated attack detection in heterogeneous network. Int. J. Inf. Secur., 23(5):3329–3349, October 2024. `link to publication <https://link.springer.com/article/10.1007/s10207-024-00891-3>`_
+2. Aulia Arif Wardana, Grzegorz Kołaczek, and Parman Sukarno. Lightweight, trust-managing, and privacy-preserving collaborative intrusion detection for internet of things. Appl. Sci. (Basel), 14(10):4109, May 2024. `link to publication <https://www.mdpi.com/2076-3417/14/10/4109>`_
 3. On Going
-4. On Going
-5. Aulia Arif Wardana and Parman Sukarno. Taxonomy and survey of collaborative intrusion detection system using federated learning. ACM Comput. Surv., October 2024.
+4. Aulia Arif Wardana, Grzegorz Kołaczek, and Parman Sukarno. Coat-set: Transformed coordinated attack dataset for collaborative intrusion detection simulation. Data in Brief, page 111354, 2025. `link to publication <https://www.sciencedirect.com/science/article/pii/S2352340925000861>`_
+5. Aulia Arif Wardana and Parman Sukarno. Taxonomy and survey of collaborative intrusion detection system using federated learning. ACM Comput. Surv., October 2024. `link to publication <https://dl.acm.org/doi/full/10.1145/3701724>`_

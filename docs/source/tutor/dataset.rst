@@ -5,7 +5,7 @@ Dataset
 
 .. note::
 
-    CoAt-Set Publication: https://github.com/aulwardana/CIDS-Sim
+    CoAt-Set Publication: https://www.sciencedirect.com/science/article/pii/S2352340925000861
 
 The CoAt-Set dataset is a transformed, specialized dataset designed to support collaborative anomaly detection within Collaborative Intrusion Detection Systems (CIDS). This dataset extract coordinated attack behaviors from established sources like CIC-ToN-IoT, CIC-IDS2017, CIC-UNSW-NB15, CSE-CIC-IDS2018, CIC-BoT-IoT, Distrinet-CIC-IDS2017, and NF-UQ-NIDS, refining these raw datasets into a format specifically designed for collaborative anomaly detection. CoAt-Set highlights coordinated attack situations, such as widespread, stealthy scanning, worm outbreaks, and distributed denial-of-service (DDoS) attacks, all of which mirror high-impact, realistic threats that are frequently found in today’s complex networks.
 

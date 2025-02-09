@@ -3,9 +3,6 @@ Prediction Process
 
 .. _cids.fl.predict:
 
-Prediction Process in the Federated Training Code
-=================================================
-
 The code includes **two main prediction phases**: local validation during client training and global evaluation of the aggregated model. Below is a detailed breakdown:
 
 1. **Local Validation Prediction (Per Node)**

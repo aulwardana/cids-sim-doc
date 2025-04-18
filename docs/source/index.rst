@@ -35,16 +35,3 @@ If you use this software, please provide citation credit to our **publication** 
    cids.fl.aggregate
    cids.fl.training
    cids.fl.predict
-   cids.metric.accuracy
-   cids.metric.precision
-   cids.metric.recall
-   cids.metric.f1_score
-   cids.metric.std_dev
-   cids.metric.varriance
-   cids.metric.train_time
-   cids.metric.pred_time
-   cids.metric.cpu_memory
-   cids.metric.comp_over
-   cids.out.log
-   cids.out.visual
-   cids.out.file

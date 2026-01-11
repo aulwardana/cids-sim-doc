@@ -12,7 +12,7 @@ This approach not only safeguards data confidentiality but also enables organiza
 Github: `https://github.com/aulwardana/CIDS-Sim <https://github.com/aulwardana/CIDS-Sim>`_
 
 The simulator is *open-source* and *free to use* for researchers, practitioners in the industry, and educators. 
-If you use this software, please provide citation credit to our **publication** available at `this link. <https://github.com/aulwardana/CIDS-Sim>`_
+If you use this software, please provide citation credit to our **publication** available at `this link. <https://www.sciencedirect.com/science/article/pii/S2352711026000051>`_
 
 .. toctree::
    :maxdepth: 2
